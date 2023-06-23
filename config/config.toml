@@ -1,0 +1,17 @@
+[server]
+address = ":8200"
+version="0.1.1"
+[database]
+[[database.default]]
+type = "sqlite"
+link = "/tmp/khronos.db"
+[[database.logger]]
+path="log"
+level = "all"
+stdout = true
+[redis]
+default = "127.0.0.1:6380,4,redis"
+[logger]
+    path   = "log"
+    level  = "all"
+    stdout = false
